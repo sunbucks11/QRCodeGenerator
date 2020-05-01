@@ -1,6 +1,4 @@
 # QRCodeGenerator
-30/04/2020
-ivanti Interview Coding (Android App) Challenge
 Step-1: Create a new java project in Android Studio
  
 Test the App can build and run in Emulator:
