@@ -46,7 +46,7 @@
                 android:id="@+id/btnReset"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
-                android:text="Reset"
+                android:text="Clear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <Button
@@ -57,7 +57,6 @@
                 android:text="Generate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -67,10 +66,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtSaveHint"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zxing_viewfinder_laser"
+                android:layout_above="@id/loader"
+                android:text="Tap the image to save it" />
+
             <RelativeLayout
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
 
                 <ImageView
                     android:id="@+id/imgResult"
@@ -91,6 +101,7 @@
                     android:layout_height="wrap_content" />
 
             </RelativeLayout>
+
         </LinearLayout>
     </RelativeLayout>
 

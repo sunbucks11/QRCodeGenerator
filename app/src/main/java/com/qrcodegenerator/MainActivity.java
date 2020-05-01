@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private Snackbar snackbar;
     private Bitmap qrImage;
     private EditText txtQRText;
+    private TextView txtSaveHint;
     private Button btnGenerate, btnReset;
     private ImageView imgResult;
     private ProgressBar loader;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         self = this;
 
         txtQRText   = (EditText)findViewById(R.id.txtQR);
+        txtSaveHint = (TextView) findViewById(R.id.txtSaveHint);
         btnGenerate = (Button)findViewById(R.id.btnGenerate);
         btnReset    = (Button)findViewById(R.id.btnReset);
         imgResult   = (ImageView)findViewById(R.id.imgResult);
@@ -179,6 +181,7 @@ public class MainActivity extends AppCompatActivity {
             qrImage = null;
         } else {
             imgResult.setImageBitmap(bitmap);
+            txtSaveHint.setVisibility(View.VISIBLE);
         }
     }
 
